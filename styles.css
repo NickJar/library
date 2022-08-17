@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Silkscreen', sans-serif;
+
+}
+
+.flex-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px min-content;
+    grid-template-areas: 
+    'header'
+    'main-content'
+    ;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-area: header;
+    align-items: center;
+    background-color: rgb(72, 92, 145);
+    font-size: 4em;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.main-content{
+    display: grid;
+    grid-area: main-content;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.libraryHead{
+    background-color: rgb(72, 92, 145);
+    color: white;
+}
+
+.libraryBody{
+    background-color: rgb(208, 208, 208);
+}
+table, th, tr, td, input{
+    border: 2px solid black;
+}
+td{
+    padding: 5px;
+}
+
+.newBook{
+    width: 150px;
+    height: 60px;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 5px 5px 8px #000000;
+}
+.newBook:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.formPopup{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(84, 161, 156);
+    border: 5px solid #000;
+    box-shadow: 0px 0px 15px #e097df;
+}
+.formPopup form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+.formPopup input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.read{
+    color: #fff;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form button{
+    height: 25px;
+}
+
+tr input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tr button{
+    width:100%;
+}
+
+button:hover{
+    color: #e097df;
+}
